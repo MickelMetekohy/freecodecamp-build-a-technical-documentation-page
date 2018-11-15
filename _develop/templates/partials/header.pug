@@ -1,0 +1,26 @@
+nav#navbar
+  header#navbar-brand
+    h1 
+      a(href="index.html") Flexbox Basics
+  ul#navbar-nav
+    - 
+      var navItems = [
+        {href: '#flexbox_introduction', text: 'Flexbox Introduction', extraClasses: ''},
+        {href: '#display', text: 'Display', extraClasses: ''},
+        {href: '#flex_direction', text: 'Flex Direction', extraClasses: ''},
+        {href: '#flex_wrap', text: 'Flex Wrap', extraClasses: ''},
+        {href: '#flex_flow', text: 'Flex Flow', extraClasses: ''},
+        {href: '#justify_content', text: 'Justify Content', extraClasses: ''},
+        {href: '#align_items', text: 'Align Items', extraClasses: ''},
+        {href: '#align_content', text: 'Align Content', extraClasses: ''},
+        {href: '#order', text: 'Order', extraClasses: ''},
+        {href: '#flex_grow', text: 'Flex Grow', extraClasses: ''},
+        {href: '#flex_shrink', text: 'Flex Shrink', extraClasses: ''},
+        {href: '#flex_basis', text: 'Flex Basis', extraClasses: ''},
+        {href: '#flex', text: 'Flex', extraClasses: ''},
+        {href: '#align_self', text: 'Align Self', extraClasses: ''},
+        {href: '#reference', text: 'Reference', extraClasses: ''},
+        ];
+    each navItem in navItems
+      li(class="nav-item " + navItem.extraClasses)
+        a.nav-link(href= navItem.href + '')= navItem.text

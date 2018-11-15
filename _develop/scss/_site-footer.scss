@@ -1,0 +1,20 @@
+#site-footer {
+  background-color: #111;
+  margin: 50px auto 0;
+  padding: 10px;
+  .mix-section > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (max-width: $mq) {
+      display: block;
+    }
+  }
+  .social-media {
+    padding: 30px 10px 0;
+  }
+  .copy {
+    color: #fff;
+    font-size: 11px;
+  }
+}

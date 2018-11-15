@@ -1,0 +1,14 @@
+#site-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width: $mq) {
+        flex-direction: column-reverse;
+    }
+}

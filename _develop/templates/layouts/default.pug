@@ -1,0 +1,39 @@
+//- default.pug
+include ../partials/mix-section.pug
+include ../partials/mix-code-css.pug
+
+//- site variables
+- site_url = 'http://flexboxbasics.local';
+- metaAuthor = "Mickel Metekohy, mkr.metekohy@gmail.com";
+
+block pageVariables
+  - title = "Build a Technical Documentation Page";
+  - metaDescription = "";
+  - bodyClass = "";
+  - page = "index";
+  - pageType = 'sub-page';
+  - pageClass = 'main-page';
+
+
+doctype html
+html(lang="en")
+
+  block head
+    include ../partials/head.pug 
+
+  body(class= bodyClass)
+  
+    div#site-wrapper(class= pageClass + ' ' + pageType)
+
+      block header
+        include ../partials/header.pug 
+
+      block content
+
+    //- block footer
+    //-   include ../partials/footer.pug
+
+    block scripts
+      script(src='js/app.bundle.js')
+      script(async src="https://static.codepen.io/assets/embed/ei.js")
+      script(src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js')

@@ -1,0 +1,61 @@
+main#main-doc {
+    padding: 20px 25px 60px;
+    overflow-y: auto;
+    @media (max-width: $mq) {
+        padding: 20px 10px;
+    }
+    .main-section, .mix-section {
+        line-height: 1.5;
+        header {
+            h2 {
+                border-bottom: 3px solid #111;
+            }
+        }
+        article {
+            ul, ol {
+                padding-left: 20px;
+            }
+            code {
+                background: #eee;
+            }
+            pre {
+                position: relative;
+                background-color: #333;
+                code.css {
+                    background-color: #333;
+                    padding: 10px;
+                    display: block;
+                    overflow-x: scroll;
+                    .css-selector {
+                        color: orange;
+                    }
+                    .css-punctuation {
+                        color: white;
+                    }
+                    .css-property {
+                        color: lightblue;
+                    }
+                    .css-value {
+                        color: yellow
+                    }
+                    .css-comment {
+                        color: lightgrey
+                    }
+                }
+                &::before {
+                    display: block;
+                    background: #111;
+                    color: #fff;
+                    font-weight: 800;
+                    padding: 3px 10px;
+                    content: '```CSS';
+                }
+            }
+        }
+        &.inverted {
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+}

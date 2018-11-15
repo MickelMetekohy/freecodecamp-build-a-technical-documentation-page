@@ -1,0 +1,72 @@
+.social-media {
+  li {
+    display: inline-block;
+    margin: 3px;
+  }
+  a {
+    display: block;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    &::before {
+      font-family: "Font Awesome 5 Brands";
+      font-weight: 400;
+      content: "\f0c0";
+      font-size: 20px;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    &[href*="dribbble.com"]::before {content: '\f17d';}
+    &[href*="facebook.com"]::before {content: "\f09a";}
+    &[href*="flickr.com"]::before {content: '\f16e';}
+    &[href*="foursquare.com"]::before {content: '\f180';}
+    &[href*="github.com"]::before {content: '\f09b';}
+    &[href*="plus.google.com"]::before {content: '\f0d5';}
+    &[href*="instagram.com"]::before {content: '\f16d';}
+    &[href*="linkedin.com"]::before {content: '\f0e1';}
+    &[href*="jsfiddle.com"]::before {content: '\f1cc';}
+    &[href*="pinterest.com"]::before {content: '\f0d2';}
+    &[href*="reddit.com"]::before {content: '\f1a1';}
+    &[href*="soundcloud.com"]::before {content: '\f1be';}
+    &[href*="stackoverflow.com"]::before {content: '\f16c';}
+    &[href*="tumblr.com"]::before {content: '\f173';}
+    &[href*="twitter.com"]::before {content: '\f099';}
+    &[href*="vimeo.com"]::before {content: '\f194';}
+    &[href*="vine.co"]::before {content: '\f1ca';}
+    &[href*="yelp.com"]::before {content: '\f1e9';}
+    &[href*="youtube.com"]::before {content: '\f167';}
+    &[href*="wordpress.com"]::before {content: '\f19a';}
+    &[href*="freecodecamp.org"]::before {content: '\f2c5';}
+  }
+}
+
+
+
+.btn-circle {
+  border: none;
+  display: inline-block;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #fff;
+  outline: none;
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  &::before {
+    margin-top: -4px;
+  }
+}
+.btn-circle-invert {
+  @extend .btn-circle;
+  border: 2px solid #111;
+  background-color: #fff;
+  color: #111;
+}

@@ -1,0 +1,18 @@
+//- mix-code-css.pug
+//- SECTION
+//- param 1: string with css secector
+//- param 2: array of arrays, each inner array has property,value
+//- +code-css('.container', [['property','value','comment'],['property','value','comment']])
+mixin code-css(selectors, rules)
+  code.css
+    span.css-selector= selectors
+    span.css-punctuation  {
+    br
+    each rule in rules
+      span.css-property= '  ' + rule[0]
+      span.css-punctuation : 
+      span.css-value= rule[1]
+      span.css-punctuation ;
+      span.css-comment= ' ' + rule[2]
+      br
+    spam.css-punctuation }
